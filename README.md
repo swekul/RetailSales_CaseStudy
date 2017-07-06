@@ -13,7 +13,7 @@ Language: Python 3.6.X
 Medium: Ananconda Jupyter Notebooks (.ipynb files)
 Database: Microsoft Azure SQL Database (or should I use a SQlite database or none at all??)
 
-Within the repository, there are XXXXXX files besides this README file.
+Within the repository, there are 6 files besides this README file.
 
     - article_master.txt (data file)
     - sales.txt (data file)
