@@ -10,7 +10,8 @@ margin. Two critical outcomes will be to provide correlations with promotions
 and sales along with forecasting sales for future months.
 
 Language: Python 3.6.X
-Medium: Ananconda Jupyter Notebooks (.ipynb files)
+
+Development Environment: Ananconda Jupyter Notebooks (.ipynb files)
 
 Within the repository, there are 7 files besides this README file.
 
