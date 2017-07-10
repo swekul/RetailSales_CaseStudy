@@ -31642,9 +31642,19 @@ Name: sales, dtype: int64</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The mean value for promo1 increases from 54.7 to 91.5 sales per week and the median value increases from 26 to 45 sales per week with promo1 activated and promo2 off.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[499]:</div>
+<div class="prompt input_prompt">In&nbsp;[559]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">g_p1</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;promo2&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">][</span><span class="s1">&#39;sales&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
@@ -31658,7 +31668,7 @@ Name: sales, dtype: int64</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[499]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[559]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -31686,7 +31696,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[503]:</div>
+<div class="prompt input_prompt">In&nbsp;[560]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">g_p2</span> <span class="o">=</span> <span class="n">data_joined</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;promo2&#39;</span><span class="p">])</span>
@@ -31701,7 +31711,7 @@ dtype: int64</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[503]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[560]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -31764,15 +31774,44 @@ dtype: int64</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The mean value for promo2 increases from 547 to 57.4 sales per week and the median value decreases from 26 to 20 sales per week with promo2 activated and promo1 off.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[561]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">g_p2</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="s1">&#39;promo1&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">][</span><span class="s1">&#39;sales&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[561]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>promo2
+0    4139971
+1      17739
+dtype: int64</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 

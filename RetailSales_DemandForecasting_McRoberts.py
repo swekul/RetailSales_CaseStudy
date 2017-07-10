@@ -855,20 +855,24 @@ g_p1 = data_joined.groupby(by=['promo1'])
 g_p1.apply(lambda x: x[x['promo2'] != 1]['sales'].describe())
 
 
-# In[499]:
+# The mean value for promo1 increases from 54.7 to 91.5 sales per week and the median value increases from 26 to 45 sales per week with promo1 activated and promo2 off.
+
+# In[559]:
 
 g_p1.apply(lambda x: x[x['promo2'] != 1]['sales'].sum())
 
 
 # Repeat for promo2.
 
-# In[503]:
+# In[560]:
 
 g_p2 = data_joined.groupby(by=['promo2'])
 g_p2.apply(lambda x: x[x['promo1'] != 1]['sales'].describe())
 
 
-# In[ ]:
+# The mean value for promo2 increases from 547 to 57.4 sales per week and the median value decreases from 26 to 20 sales per week with promo2 activated and promo1 off.
+
+# In[561]:
 
 g_p2.apply(lambda x: x[x['promo1'] != 1]['sales'].sum())
 
