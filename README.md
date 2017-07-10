@@ -12,7 +12,7 @@ and sales along with forecasting sales for future months.
 Language: Python 3.6.X
 Medium: Ananconda Jupyter Notebooks (.ipynb files)
 
-Within the repository, there are 6 files besides this README file.
+Within the repository, there are 7 files besides this README file.
 
     - article_master.txt (data file)
     - sales.txt (data file)
