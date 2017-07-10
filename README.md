@@ -19,8 +19,8 @@ Within the repository, there are 7 files besides this README file.
     - sales.txt (data file)
     - RetailSales_CaseStudy.pptx (powerpoint file with overview and tasks)
     - RetailSales_DemandForecasting_McRoberts.ipynb (Jupyter Notebook Python file)
-    - FilterNoisyGPSdata_McRoberts.html (Jupyter Notebook exported to HTML)
-    - FilterNoisyGPSdata_McRoberts.py (Jupyter Notebook exported to .py)
+    - RetailSales_DemandForecasting_McRoberts.html (Jupyter Notebook exported to HTML)
+    - RetailSales_DemandForecasting_McRoberts.py (Jupyter Notebook exported to .py)
     - RetailSales_Results_McRoberts.pptx (powerpoint file with my results)
 
 The Jupyter Notebook file was used for development. Use for evaluating
